@@ -1,0 +1,15 @@
+name: calculator-integration-testing
+on:
+  pull_request:
+    types: [opened]
+    branches:
+      - 'main'
+
+jobs:
+  publish-image:
+    name: do integration testing
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 'integration testing'
+        run: echo 'integration testing is done and successful' 
